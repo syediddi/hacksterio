@@ -1,0 +1,35 @@
+﻿@model IEnumerable<hackersio.Models.ScheduleCommand>
+
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+// ViewBag.Title = "Home Page";
+}
+<h2>My Schedules</h2>
+<div class="row">
+    <div class="col-md-2">
+        @Html.ActionLink("New","Create")
+    </div>
+</div>
+<div class="row">
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Relay</td>
+                <td>Scheduled Time</td>
+                <td>State</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>@item.RelayId</td>
+                <td>@item.ScheduledTime</td>
+                <td>@item.State</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

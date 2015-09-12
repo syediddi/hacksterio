@@ -1,0 +1,7 @@
+{
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Your Azure DB/ SQL DB Connection string for website authentication"
+    }
+  }
+}

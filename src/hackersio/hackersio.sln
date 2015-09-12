@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7D1F883F-AAA7-4579-86EA-DACD4168B83E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{50255802-4E4B-407F-AFFD-F8DDE9367B83}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+		NuGet.Config = NuGet.Config
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "hackersio", "src\hackersio\hackersio.xproj", "{9AFD8AF7-260F-4CFF-805E-A1CADA760426}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{FFBE9C5A-28E4-478D-B1D7-4F70877CC402}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{BB4F5FFE-4888-4A4E-9FBC-6EF0A05F729D}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{54277ADD-85AF-454E-8F9D-57DF8253BD78}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\hackersio.json = PublishScripts\Templates\hackersio.json
+		PublishScripts\Templates\hackersio.param.dev.json = PublishScripts\Templates\hackersio.param.dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9AFD8AF7-260F-4CFF-805E-A1CADA760426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AFD8AF7-260F-4CFF-805E-A1CADA760426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AFD8AF7-260F-4CFF-805E-A1CADA760426}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AFD8AF7-260F-4CFF-805E-A1CADA760426}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9AFD8AF7-260F-4CFF-805E-A1CADA760426} = {7D1F883F-AAA7-4579-86EA-DACD4168B83E}
+		{BB4F5FFE-4888-4A4E-9FBC-6EF0A05F729D} = {FFBE9C5A-28E4-478D-B1D7-4F70877CC402}
+		{54277ADD-85AF-454E-8F9D-57DF8253BD78} = {FFBE9C5A-28E4-478D-B1D7-4F70877CC402}
+	EndGlobalSection
+EndGlobal
